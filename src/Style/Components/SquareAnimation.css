@@ -1,0 +1,68 @@
+.SquareAnimation{
+    position: absolute;
+    top: 10%;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    left: 0;
+
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-600px) rotate(90deg);
+        opacity: 1;
+    }
+
+}
+.SquareAnimation li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 255, 0.4);
+    bottom: -150px;
+    animation: animate 20s linear infinite;
+}
+
+.SquareAnimation li:nth-child(1){
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0.3s;
+}
+
+.SquareAnimation li:nth-child(2){
+    left: 30%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 1s;
+}
+
+.SquareAnimation li:nth-child(3){
+    left: 45%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 3.5s;
+}
+
+.SquareAnimation li:nth-child(4){
+    left: 70%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 0.5s;
+}
+
+.SquareAnimation li:nth-child(5){
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+}
