@@ -1,6 +1,5 @@
 import React from "react";
 import "../Style/Components/SquareAnimation.css"
-import $ from 'jquery';
 
 class SquareAnimation extends React.Component{
 

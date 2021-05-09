@@ -1,0 +1,60 @@
+.ReasonsWhy{
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-color: #0ba4d4;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: var(--pagesBackgroundColor);
+
+}
+
+.ReasonsWhy .container{
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-color: #0ba4d4;
+    background-color: var(--pagesBackgroundColor);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.BenefitCardContainer{
+    width: 25%;
+    height: 70%;
+
+}
+
+
+
+
+@media (pointer:none), (pointer:coarse) {
+
+    .ReasonsWhy {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    .ReasonsWhy .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: scroll;
+
+    }
+
+
+    .BenefitCardContainer{
+        width: 100%;
+        height: 90%;
+        padding: 5%;
+
+    }
+
+
+
+
+
+}
+

@@ -1,0 +1,18 @@
+.PageTitle{
+    width: 100%;
+    float: left;
+    align-self: flex-start;
+    height: 100%;
+    color: white;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5vw;
+}
+
+@media (pointer:none), (pointer:coarse), (max-width: 700px) {
+    .PageTitle{
+        font-size: 2.5vh;
+    }
+}

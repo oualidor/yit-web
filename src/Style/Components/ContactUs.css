@@ -1,0 +1,191 @@
+.ContactUS{
+    width: 100%;
+    height: 100%;
+    background-color: var(--pagesBackgroundColor);
+}
+
+    .footerContent{
+        float: left;
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contactFormContainer{
+        display: block;
+        float: right;
+        width: 40%;
+        height: 90%;
+        background-color: white;
+        border-radius: 5vh;
+        padding: 2%;
+        margin-left: 5%;
+        box-shadow: 5px 5px 5px 5px #888888;
+    }
+
+
+    .contactInfoContainer{
+        display: flex;
+        float: right;
+        height: 100%;
+        width: 80%;
+        border-top-right-radius: 50px;
+        padding: 20px;
+        margin-right: 0%;
+        font-family: 'Acme', sans-serif;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+        .mail, .phone, .whatsUp, .faceBook{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            width: 30%;
+            height: 25%;
+            font-size: 2.5vh;
+        }
+
+    .contactUsMapsContainer{
+        float: left;
+        width: 45%;
+        height: 80%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+        .mapsTabsContainer{
+            display: none;
+            height: 0%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            .mapTab{
+                border-top-right-radius: 30px;
+                background-color: var(--primary);
+                height: 100%;
+                width: 30%;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+        .mapContainer{
+            height: 100%;
+            width: 100%;
+        }
+
+
+
+    .footerBottomBar{
+        background-color: black;
+        color: white;
+        height: 5%;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+@media (pointer:none), (pointer:coarse), (max-width: 700px)  {
+    .ContactUS{
+        display: none;
+    }
+    .footerContent{
+        display: block;
+    }
+    .contactFormContainer{
+        float: right;
+        width: 90%;
+        height: 95%;
+        background-color: transparent;
+        border-radius: 50px;
+        padding: 2%;
+        margin-right: 5%;
+        box-shadow: none;
+    }
+
+    .contactInfoContainer{
+        display: none;
+        float: right;
+        height: 80%;
+        width: 80%;
+        border-top-right-radius: 50px;
+        padding: 20px;
+        background-color: white;
+        margin-right: 0%;
+        font-family: 'Acme', sans-serif;
+    }
+    .mail, .phone, .whatsUp, .faceBook{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 25%;
+        font-size: 2vh;
+
+    }
+
+    .contactUsMapsContainer{
+        display: none;
+
+        float: left;
+        width: 50%;
+        height: 80%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .mapsTabsContainer{
+        display: none;
+        height: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mapTab{
+        border-top-right-radius: 30px;
+        background-color: var(--primary);
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .mapContainer{
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    .footerBottomBar{
+        background-color: black;
+        color: white;
+        height: 5%;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

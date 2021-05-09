@@ -1,0 +1,24 @@
+.SectionDown{
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 100%;
+    width: 100%;
+    background-color: var(--pagesBackgroundColor);
+}
+
+.mainContainer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.sorryIcon{
+    height: 40%;
+    width: 30%;
+}
+
+.MainText{
+    font-size: 4vh;
+}

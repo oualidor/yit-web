@@ -27,7 +27,7 @@
     list-style: none;
     width: 25px;
     height: 25px;
-    background-color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(255, 255, 255, 0.8);
     bottom: -150px;
     animation: animate 20s linear infinite;
 }

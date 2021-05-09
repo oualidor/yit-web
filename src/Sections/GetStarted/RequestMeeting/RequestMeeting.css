@@ -1,0 +1,68 @@
+.RequestMeeting{
+    float: left;
+    background-color: var(--pagesBackgroundColor);
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+
+
+    .OnlineMeetingContainer{
+        float: left;
+        height: 80%;
+        width: 45%;
+    }
+    .OnlineMeetingContainer .title{
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+        .RequestMeetingFormContainer{
+            float: left;
+            width: 100%;
+            padding-left: 3%;
+
+        }
+
+    .positionChooser{
+        font-size: 4vh;
+        float: right;
+        width: 50%;
+        height: 80%;
+    }
+        .mapHolder{
+            width: 100%;
+            height: 80%;
+        }
+
+@media (pointer:none), (pointer:coarse) {
+    .OnlineMeetingContainer{
+        float: left;
+        height: 100%;
+        width: 100%;
+    }
+    .OnlineMeetingContainer .title{
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .RequestMeetingFormContainer{
+        float: left;
+        width: 100%;
+        padding-left: 3%;
+    }
+
+    .positionChooser{
+        font-size: 4vh;
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+    .mapHolder{
+        width: 100%;
+        height: 80%;
+    }
+}

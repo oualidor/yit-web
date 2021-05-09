@@ -1,0 +1,89 @@
+.BenefitCard{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+    .icon{
+        height: 18vw;
+        width: 18vw;
+        border-radius: 50%;
+        border: 10px solid var(--primary);
+        padding: 5px;
+    }
+
+    .yesIcon{
+        height: 4vw;
+        width: 4vw;
+    }
+
+    .title{
+        font-size: 2vw;
+    }
+    .text{
+        font-size: 1.2vw;
+        width: 60%;
+        text-align: center;
+    }
+        .name{
+        width: 100%;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+
+
+@media (pointer:none), (pointer:coarse) {
+    .BenefitCard{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5vw;
+
+    }
+    .icon{
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50%;
+        border: 10px solid var(--primary);
+        padding: 5px;
+        background-color: rgba(10, 10, 10, 0.4);
+    }
+
+    .yesIcon{
+        height: 25vw;
+        width: 25vw;
+    }
+    .dotsHolder{
+        font-size: 3.5vw;
+    }
+    .title{
+        font-size: 8vw;
+    }
+    .text{
+        font-size: 4.8vw;
+        width: 60%;
+        text-align: center;
+    }
+    .name{
+        width: 100%;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+}
+
