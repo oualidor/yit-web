@@ -39,7 +39,7 @@ function test(){
 }
 
 $(document).ready(function(){
-  alert("test")
+
   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if (isMobile) {
     setMobileDimensions();
