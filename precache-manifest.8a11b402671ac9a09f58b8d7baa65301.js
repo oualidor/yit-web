@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed193117627b1410a72113699d49d2d9",
+    "revision": "bd057d1853647ea55fc43402e55a58ab",
     "url": "/yit-web/index.html"
   },
   {
-    "revision": "fadeca73487913d1a2e7",
+    "revision": "b52b6c271865f7b1cf3b",
     "url": "/yit-web/static/css/main.52d9abc9.chunk.css"
   },
   {
-    "revision": "d63153263da334b94958",
-    "url": "/yit-web/static/js/2.a7fe1dd6.chunk.js"
+    "revision": "d61e4487cfe848f0e77e",
+    "url": "/yit-web/static/js/2.f21667fd.chunk.js"
   },
   {
     "revision": "90c92529f3612e6ec24d000f438a161b",
-    "url": "/yit-web/static/js/2.a7fe1dd6.chunk.js.LICENSE.txt"
+    "url": "/yit-web/static/js/2.f21667fd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fadeca73487913d1a2e7",
-    "url": "/yit-web/static/js/main.11fa5e60.chunk.js"
+    "revision": "b52b6c271865f7b1cf3b",
+    "url": "/yit-web/static/js/main.a3e068ed.chunk.js"
   },
   {
     "revision": "20ab8b65294b514021cd",
