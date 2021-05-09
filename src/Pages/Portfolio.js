@@ -1,0 +1,207 @@
+import React from "react";
+import $ from 'jquery';
+import "../Style/Pages/Portfolio.css"
+import WebSite from "../Components/WebSite";
+import mimmarImage from "../Imgs/Portfolio/mimmar.png"
+import oualidPorfolioImage from "../Imgs/Portfolio/oualidPorfolio.png"
+import chaab from "../Imgs/Portfolio/chaab.png"
+import arch from "../Imgs/Portfolio/arch.png"
+import ecmorce1 from "../Imgs/Portfolio/ecomerce1.jpg"
+import ecmorce2 from "../Imgs/Portfolio/ecomerce2.jpg"
+import next from "../Imgs/next.webp"
+import pevious from "../Imgs/previous.webp"
+import MobileApp from "../Components/MobileApp";
+
+
+import WebIcon from '@material-ui/icons/Web';
+import StayCurrentPortraitIcon from '@material-ui/icons/StayCurrentPortrait';
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
+import Logo from "../Components/Logo";
+import isMobile from "../CustomLibs/Functions";
+
+
+
+
+let ids = [0, 1, 2]
+
+let prevId = 0;
+let nextID = 1;
+let currentID = 0;
+function prevClick(e) {
+    $("#next").attr("href", "#Project"+currentID);
+    $("#aPrev").attr("href", "#Project"+prevId);
+    if (prevId === 0){
+        nextID = currentID -1
+        currentID = currentID - 1;
+    }else{
+        prevId = prevId - 1;
+        nextID = currentID -1
+        currentID = currentID - 1;
+    }
+}
+
+
+
+let technologies = "HTML, CSS, JavaScript, WordPress, PostGreSQL"
+class Portfolio extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {iconsStyles : {
+                width: "",
+                height: "",
+            }}
+
+
+    }
+    componentDidMount() {
+        if(isMobile){
+            this.setState({iconsStyles : {
+                    width: 90,
+                    height: 90,
+                }})
+        }else{
+            this.setState({iconsStyles : {
+                    width: "",
+                    height: "",
+                }})
+        }
+
+        $( ".Header" ).css("background", "-webkit-linear-gradient(white, white)")
+        $( ".Header" ).css("top", "0%")
+        $( ".navA" ).css("color", "#0ba4d4")
+
+        $( ".menuIcon" ).css("color", "#0ba4d4")
+
+        //Logo
+        $( ".HeaderLogoContainer" ).css("display", "block")
+
+
+        //NavBar
+        if(isMobile){
+            $( ".NavBar" ).css("top", "10%")
+            $( ".NavBar" ).css("width", "100%")
+        }
+        $( "#navApply" ).css("background-color", "#0ba4d4")
+        $( "#navApply" ).css("border-radius", "20px")
+        $( ".navApplyText" ).css("color", "white")
+    }
+
+    nextClick(e){
+        $("#next").attr("href", "#Project"+nextID);
+        $("#aPrev").attr("href", "#Project"+currentID);
+        prevId = currentID;
+        nextID = nextID + 1
+        currentID = currentID + 1;
+
+    }
+    render(){
+        return(
+            <React.Fragment>
+                <section className={"Portfolio"} id={"Portfolio"}>
+                    <div className="topMenuSpacer"></div>
+                    <div className="pageTitleMargine"></div>
+                    <div className="categoriesHolder">
+                        <div className="categoryHolder" id={"web"}>
+                            <div className="moveLeft">
+                                <a id={"aPrev"} href={"#Project"+prevId} onClick={prevClick}><img className={"nextImage"} src={pevious} alt=""/> </a>
+                            </div>
+                            <div className="ProductsContainer">
+                                <WebSite
+                                    id={"Project"+ids[0]}
+                                    image={mimmarImage}
+                                    name={"Mimmar Sinan"}
+                                    coders={"Your IT Department, the coding team"}
+                                    desingers={"As client requested, YIT, the design team"}
+                                    policy={"Team integration, life time support"}
+                                    technologies={technologies}
+                                    link={"https://www.mimarsin.com/"}/>
+                                <WebSite
+                                    id={"Project"+ids[1]}
+                                    image={arch}
+                                    name={"Archaeological Paths"}
+                                    coders={"Your IT Department, the coding team"}
+                                    desingers={"Third party partner"}
+                                    policy={"Development only"}
+                                    technologies={"Word press, wp travel engine, YIT-Booking"}
+                                    link={"https://archaeologicalpaths.com/"}/>
+                                <WebSite
+                                    id={"Project"+ids[2]}
+                                    image={chaab}
+                                    name={"News Bar for Jouranl El Chaab"}
+                                    coders={"YourIt frparment, the devlopment team"}
+                                    desingers={"As Client requested"}
+                                    policy={"Life time support"}
+                                    technologies={"HTML5, JQUERY, CSS"}
+                                    link={"http://www.ech-chaab.com/echaab/"}/>
+                                <WebSite
+                                    id={"Project"+ids[3]}
+                                    image={oualidPorfolioImage}
+                                    name={"Oualid KHIAL Porfolio"}
+                                    coders={"Oualid KHIAL"}
+                                    desingers={"Oualid KHIAL"}
+                                    policy={"Life time support"}
+                                    technologies={"HTML5, JQUERY, CSS"}
+                                    link={"https://archaeologicalpaths.com/"}/>
+                            </div>
+                            <div className="moveRight">
+                                <a id={"next"} href={"#Project"+nextID} onClick={this.nextClick}><img className={"nextImage"} src={next} alt="Next"/></a>
+                            </div>
+                        </div>
+                        <div className="categoryHolder" id={"mobile"}>
+                            <MobileApp
+                                id={"id"}
+                                name={"E-Comerce"}
+                                image1={ecmorce1}
+                                image2={ecmorce2}
+                                coders={"YITDepartment, the coding team"}
+                                desingers={"Third party partners, Shortcuts team" }
+                                policy={"Life time support"}
+                                technologies={"Android, NodeJS Express, PostGreSQL "}
+                            />
+                        </div>
+
+                    </div>
+                    <div className="tabsMenu">
+                        <div className="tab">
+                            <a className={"tabEntry"} href="#web">
+                                <WebIcon
+                                    className={"portfolioNavIcon"}
+                                    style={this.state.iconsStyles}/>
+                                <span className="porfolioNavA">Web Sites</span>
+                            </a>
+                        </div>
+                        <div className="tab">
+                            <a className={"tabEntry"} href="#mobile">
+                                <StayCurrentPortraitIcon
+                                    className={"portfolioNavIcon"}
+                                    style={this.state.iconsStyles}
+                                    alt={""}/>
+                                <span className="porfolioNavA">Mobile applications</span>
+                            </a>
+                        </div>
+                        <div className="tab">
+                            <a className={"tabEntry"} href="#mobile">
+                                <DesktopWindowsIcon
+                                    className={"portfolioNavIcon"}
+                                    style={this.state.iconsStyles}/>
+                                <span className="porfolioNavA">Desktop softwares</span>
+                            </a>
+                        </div>
+                        <div className="tab">
+                            <a className={"tabEntry"} href="">
+                                <DevicesOtherIcon
+                                    className={"portfolioNavIcon"}
+                                    style={this.state.iconsStyles}/>
+                                <span className="porfolioNavA">Other</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </React.Fragment>
+
+        )
+    }
+}
+
+export default Portfolio

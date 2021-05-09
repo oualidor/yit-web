@@ -1,0 +1,126 @@
+.WebSite{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+    .webSiteImage{
+        background-color: #61dafb;
+        height: 100%;
+        margin-right: 5%;
+        width: 50%;
+    }
+
+    .webSiteContent{
+        position: relative;
+        height: 100%;
+        width: 40%;
+    }
+
+        .webSiteName{
+            height: 15%;
+            background: -webkit-linear-gradient( black, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 4vh;
+        }
+
+        .webSiteCoders, .webSiteDesigners, .webSitePolicyType, .webSiteTechnologies{
+            height: 10%;
+            width: 100%;
+        }
+
+
+
+    .webSiteContentTitle{
+        font-weight: bold;
+        font-size: 2.5vh;
+        height: 10%;
+    }
+        .webSiteOperations{
+            position: absolute;
+            top: 85%;
+            right: 0%;
+            height: 10%;
+            width: 100%;
+        }
+            .webSiteOpenBTN{
+                background-color:  var(--primary);;
+                float: right;
+                width: 25%;
+                height: 100%;
+                border-radius: 3vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .webSiteOpenBtnA{
+                color: black;
+                text-decoration: none;
+            }
+
+
+@media (pointer:none), (pointer:coarse), (max-width: 700px)  {
+    .WebSite{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .webSiteImage{
+        height: 50%;
+        margin-right: 0%;
+        width: 100%;
+    }
+
+    .webSiteContent{
+        height: 50%;
+        width: 100%;
+    }
+
+
+    .webSiteName{
+        height: 15%;
+        background: -webkit-linear-gradient( black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4vh;
+    }
+
+    .webSiteCoders, .webSiteDesigners, .webSitePolicyType, .webSiteTechnologies{
+        height: 15%;
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .webSiteContentTitle{
+        color: gray;
+        font-size: 2.5vh;
+        height: 10%;
+    }
+
+
+    .webSiteOperations{
+        height: 15%;
+        width: 100%;
+    }
+
+    .webSiteOpenBTN{
+
+        float: right;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

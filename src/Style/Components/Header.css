@@ -1,0 +1,57 @@
+.Header{
+    position: fixed;
+    top: 2%;
+    width: 100%;
+    display: block;
+    height: 11%;
+    z-index: 1;
+}
+
+    .HeaderLogoContainer{
+        padding: 1%;
+        display: none;
+        float: left;
+        width: 15%;
+        height: 100%;
+    }
+
+    .mobileHeaderLogoContainer{
+        display: none;
+    }
+
+    #logoBlue{
+        display: block;
+    }
+
+    .headerPageTitleContainer{
+        display: block;
+        color: white;
+        float: left;
+        margin-left: 2%;
+        height: 100%;
+        width: 15%;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .navBarContainer{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    .socialMediaContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        float: right;
+        width: 10%;
+        height: 100%;
+        margin-right: 5%;
+    }
+
+@media (pointer:none), (pointer:coarse), (max-width: 700px) {
+    .Header{
+        display: none;
+    }
+
+
+}

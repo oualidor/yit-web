@@ -1,0 +1,115 @@
+.AboutsUs{
+    width: 100%;
+    height: 100%;
+    background-color: var(--pagesBackgroundColor);
+}
+
+.aboutUsLeftPane{
+    width: 40%;
+    height: 60%;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.aboutUsRightPane{
+    float: right;
+    width: 45%;
+    height: 80%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .aboutUsTitle{
+        align-self: flex-start;
+        font-family: 'Merienda', cursive;
+        text-align: center;
+        width: 100%;
+        background: -webkit-linear-gradient(var(--primary), var(--primary), blanchedalmond);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2vw;
+    }
+
+    .aboutUsText{
+        width: 100%;
+        font-size: 3vh;
+        font-family: 'Zilla Slab', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .aboutUsText p{
+        text-indent: 1.5vh;
+    }
+
+    #aboutUsTag{
+        align-self: center;
+    }
+    .aboutUsStatsHolder{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .statNumber{
+        background: -webkit-linear-gradient( var(--primary), black);
+        -webkit-background-clip: text;
+        font-size: 2.5vw;
+        -webkit-text-fill-color: transparent;
+    }
+
+@media (pointer:none), (pointer:coarse), (max-width: 600px) {
+    .AboutsUs{
+
+    }
+    .aboutUsLeftPane{
+        display: none;
+    }
+
+    .aboutUsRightPane{
+        float: left;
+        margin-left: 5%;
+        width: 90%;
+        height: 85%;
+
+    }
+        .aboutUsTitle{
+            font-size: 3vh;
+        }
+        .aboutUsText{
+            width: 100%;
+            font-size: 2.5vh;
+            font-family: 'Zilla Slab', serif;
+        }
+        .aboutUsStatsHolder{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: space-around;
+        }
+            .statHolder{
+
+                height: 100%;
+            }
+        .statNumber{
+            background: -webkit-linear-gradient( var(--primary), black);
+            -webkit-background-clip: text;
+            font-size: 3.5vh;
+            -webkit-text-fill-color: transparent;
+        }
+        .statText{
+            font-size: 2vh;
+        }
+}

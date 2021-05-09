@@ -1,0 +1,124 @@
+.MobileApp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 3%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.mobileAppImagesContainer{
+    height: 100%;
+    margin-right: 0%;
+    width: 50%;
+}
+    .mobileAppImage{
+        height: 100%;
+        width: 45%;
+        margin-right: 5%;
+    }
+
+.mobileAppContent{
+    height: 100%;
+    width: 55%;
+}
+    .mobileAppName{
+        height: 15%;
+        background: -webkit-linear-gradient( black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4vh;
+    }
+
+    .mobileAppCoders, .mobileAppDesigners, .mobileAppPolicyType, .mobileAppTechnologies{
+        height: 15%;
+        width: 100%;
+        font-size: 2vh;
+    }
+
+        .mobileAppContentTitle{
+            color: black;
+            font-size: 2.5vh;
+            height: 10%;
+            font-weight: bold;
+        }
+
+.mobileAppOperations{
+    height: 10%;
+
+}
+.mobileAppOpenBTN{
+    float: right;
+    width: 25%;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (pointer:none), (pointer:coarse), (max-width: 700px) {
+    .MobileApp{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 3%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mobileAppImagesContainer{
+        height: 60%;
+        margin-right: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+        .mobileAppImage{
+            height: 100%;
+            width: 50%;
+
+        }
+
+    .mobileAppContent{
+        height: 50%;
+        width: 100%;
+    }
+    .mobileAppName{
+        height: 20%;
+        background: -webkit-linear-gradient( black, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4vh;
+    }
+
+    .mobileAppCoders, .mobileAppDesigners, .mobileAppPolicyType, .mobileAppTechnologies{
+        height: 15%;
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .mobileAppContentTitle{
+        color: gray;
+        font-size: 2.5vh;
+        height: 10%;
+    }
+
+        .mobileAppOperations{
+            height: 15%;
+            width: 100%;
+        }
+
+        .mobileAppOpenBTN{
+            float: right;
+            width: 30%;
+            height: 100%;
+            background-color: var(--primary);
+            border-radius: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+}

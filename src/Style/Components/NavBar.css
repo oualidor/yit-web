@@ -1,0 +1,118 @@
+.BurgerMenu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    padding: 2%;
+    z-index: 10;
+}
+
+.NavBar{
+    float: right;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-right: 2%;
+}
+
+.navLi{
+    position: relative;
+    color: white;
+    text-align: center;
+    list-style: none;
+    width: 25%;
+    margin-right: 1%;
+}
+
+.navLi:hover .navDropDownContent {
+    display: flex;
+
+}
+
+.navDropDownContent{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+}
+.navDropDownContent .navA{
+    text-align: center;
+}
+
+
+    .navA{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2vw;
+        font-family: 'Acme', sans-serif;
+        font-family: 'Vollkorn', serif;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 2%;
+        font-weight: bold;
+    }
+    .navA:hover{
+        color: var(--primary);
+        border-bottom: 0px solid white;
+    }
+
+    #navApply{
+        color: black;
+        border-radius: 20px;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vh;
+        background-color: white;
+    }
+    .navApplyText{
+        color: black;
+    }
+
+@media (pointer:none), (pointer:coarse), (max-width: 700px) {
+    .BurgerMenu{
+        display: block;
+    }
+    .NavBar{
+        position: fixed;
+        top: 0%;
+        right: 0;
+        width: 100%;
+        height: 60%;
+        background-color: white;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin-right: 0%;
+        list-style-type: none;
+    }
+    .navLi{
+        display: block;
+        margin-bottom: 10%;
+        color: white;
+        text-align: center;
+        list-style: none;
+        width: 100%;
+    }
+
+    .navA{
+        font-size: 3.5vh;
+    }
+
+    Link{
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 4vh;
+        font-family: 'Acme', sans-serif;
+    }
+    a:hover{
+        color: grey;
+    }
+}
