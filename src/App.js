@@ -37,54 +37,55 @@ class App extends React.Component{
     }
     render() {
         return (
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path={"/"}>
-                        <Header
-                            page={"home"}
-                            backgroundColor={"none"}
-                        titles={["", "Who We Are", "What We DO", "Contact Information"]}/>
-                        <Home></Home>
-                        <AboutUs></AboutUs>
-                        <Services></Services>
-                        <ContactUs></ContactUs>
+            <React.Fragment>
+                <BrowserRouter>
+                    <Switch>
+                        <Route exact path={"/"}>
+                            <Header
+                                page={"home"}
+                                backgroundColor={"none"}
+                            titles={["", "Who We Are", "What We DO", "Contact Information"]}/>
+                            <Home></Home>
+                            <AboutUs></AboutUs>
+                            <Services></Services>
+                            <ContactUs></ContactUs>
 
-                    </Route>
-                    <Route exact path={"/WhyUs"}>
-                        <Header
-                            page={"whyUs"}
-                            backgroundColor={"none"}
-                            titles={["", "AboutUs", "Meet The Teem", "Top Reasons"]}/>
-                        <WhyUs></WhyUs>
-                        <AboutUs></AboutUs>
-                        <OurTeam></OurTeam>
-                        <ReasonsWhy></ReasonsWhy>
-                    </Route>
-                    <Route exact path={"/GetStarted"}>
-                        <Header
-                            page={"GetStarted"}
-                            backgroundColor={"none"}
-                            titles={["getStarted", "Schedule a meeting"]}/>
+                        </Route>
+                        <Route exact path={"/WhyUs"}>
+                            <Header
+                                page={"whyUs"}
+                                backgroundColor={"none"}
+                                titles={["", "AboutUs", "Meet The Teem", "Top Reasons"]}/>
+                            <WhyUs></WhyUs>
+                            <AboutUs></AboutUs>
+                            <OurTeam></OurTeam>
+                            <ReasonsWhy></ReasonsWhy>
+                        </Route>
+                        <Route exact path={"/GetStarted"}>
+                            <Header
+                                page={"GetStarted"}
+                                backgroundColor={"none"}
+                                titles={["getStarted", "Schedule a meeting"]}/>
 
-                                <GetStarted></GetStarted>
-                                <RequestMeeting></RequestMeeting>
+                                    <GetStarted></GetStarted>
+                                    <RequestMeeting></RequestMeeting>
 
 
-                    </Route>
-                    <Route exact path={"/Portfolio"}>
-                        <Header
-                            backgroundColor={"white"}/>
-                        <Portfolio></Portfolio>
-                    </Route>
-                    <Route exact path={"/Services"}>
-                        <Header
-                            backgroundColor={"white"}/>
-                        <Portfolio></Portfolio>
-                    </Route>
-                </Switch>
-                <MobileNavigation></MobileNavigation>
-            </BrowserRouter>
-
+                        </Route>
+                        <Route exact path={"/Portfolio"}>
+                            <Header
+                                backgroundColor={"white"}/>
+                            <Portfolio></Portfolio>
+                        </Route>
+                        <Route exact path={"/Services"}>
+                            <Header
+                                backgroundColor={"white"}/>
+                            <Portfolio></Portfolio>
+                        </Route>
+                    </Switch>
+                    <MobileNavigation></MobileNavigation>
+                </BrowserRouter>
+            </React.Fragment>
         );
     }
 }
