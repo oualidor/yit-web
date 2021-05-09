@@ -40,7 +40,7 @@ class App extends React.Component{
             <React.Fragment>
                 <BrowserRouter>
                     <Switch>
-                        <Route exact path={"/"}>
+                        <Route exact path={"/yit-web"}>
                             <Header
                                 page={"home"}
                                 backgroundColor={"none"}
