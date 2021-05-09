@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53bfb50ef6dcf485714f6c99e2df1964",
+    "revision": "c2f79c51279710402a2daeb5c77e4029",
     "url": "/yit-web/index.html"
   },
   {
