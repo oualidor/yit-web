@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yit-web/static/css/main.20191fc5.chunk.css",
+    "main.css": "/yit-web/static/css/main.14f5ce3c.chunk.css",
     "main.js": "/yit-web/static/js/main.690123ff.chunk.js",
     "main.js.map": "/yit-web/static/js/main.690123ff.chunk.js.map",
     "runtime-main.js": "/yit-web/static/js/runtime-main.b269d569.js",
@@ -8,9 +8,9 @@
     "static/js/2.14f2d6b3.chunk.js": "/yit-web/static/js/2.14f2d6b3.chunk.js",
     "static/js/2.14f2d6b3.chunk.js.map": "/yit-web/static/js/2.14f2d6b3.chunk.js.map",
     "index.html": "/yit-web/index.html",
-    "precache-manifest.cddc067eb9b2080c5a27906831d3f46a.js": "/yit-web/precache-manifest.cddc067eb9b2080c5a27906831d3f46a.js",
+    "precache-manifest.5a3aa5cfd791eace886d26c8d57bb05a.js": "/yit-web/precache-manifest.5a3aa5cfd791eace886d26c8d57bb05a.js",
     "service-worker.js": "/yit-web/service-worker.js",
-    "static/css/main.20191fc5.chunk.css.map": "/yit-web/static/css/main.20191fc5.chunk.css.map",
+    "static/css/main.14f5ce3c.chunk.css.map": "/yit-web/static/css/main.14f5ce3c.chunk.css.map",
     "static/js/2.14f2d6b3.chunk.js.LICENSE.txt": "/yit-web/static/js/2.14f2d6b3.chunk.js.LICENSE.txt",
     "static/media/App-development.png": "/yit-web/static/media/App-development.ccc27e88.png",
     "static/media/GetStarted.css": "/yit-web/static/media/GetStartedBackground.9b951f8d.jpg",
@@ -47,7 +47,7 @@
   "entrypoints": [
     "static/js/runtime-main.b269d569.js",
     "static/js/2.14f2d6b3.chunk.js",
-    "static/css/main.20191fc5.chunk.css",
+    "static/css/main.14f5ce3c.chunk.css",
     "static/js/main.690123ff.chunk.js"
   ]
 }
