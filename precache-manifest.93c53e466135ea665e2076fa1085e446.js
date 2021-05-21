@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b28c25a307c951152c9c4693fa6cf3b0",
+    "revision": "4789287606ea951afd3d49ea79b6f682",
     "url": "/yit-web/index.html"
   },
   {
-    "revision": "0b0c448eb9347a7815af",
-    "url": "/yit-web/static/css/main.d144b11d.chunk.css"
+    "revision": "8acadbdf651d4c15829e",
+    "url": "/yit-web/static/css/main.14641f3d.chunk.css"
   },
   {
-    "revision": "57d2f45d0f52b9fdbe66",
-    "url": "/yit-web/static/js/2.a84ce31f.chunk.js"
+    "revision": "47421d71a176fb953ee7",
+    "url": "/yit-web/static/js/2.1616d84e.chunk.js"
   },
   {
     "revision": "90c92529f3612e6ec24d000f438a161b",
-    "url": "/yit-web/static/js/2.a84ce31f.chunk.js.LICENSE.txt"
+    "url": "/yit-web/static/js/2.1616d84e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0b0c448eb9347a7815af",
-    "url": "/yit-web/static/js/main.87e8b879.chunk.js"
+    "revision": "8acadbdf651d4c15829e",
+    "url": "/yit-web/static/js/main.87ed3b15.chunk.js"
   },
   {
     "revision": "20ab8b65294b514021cd",
