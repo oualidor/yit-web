@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/yit-web/static/css/main.14f5ce3c.chunk.css",
-    "main.js": "/yit-web/static/js/main.690123ff.chunk.js",
-    "main.js.map": "/yit-web/static/js/main.690123ff.chunk.js.map",
+    "main.css": "/yit-web/static/css/main.363147b0.chunk.css",
+    "main.js": "/yit-web/static/js/main.3daa362b.chunk.js",
+    "main.js.map": "/yit-web/static/js/main.3daa362b.chunk.js.map",
     "runtime-main.js": "/yit-web/static/js/runtime-main.b269d569.js",
     "runtime-main.js.map": "/yit-web/static/js/runtime-main.b269d569.js.map",
-    "static/js/2.14f2d6b3.chunk.js": "/yit-web/static/js/2.14f2d6b3.chunk.js",
-    "static/js/2.14f2d6b3.chunk.js.map": "/yit-web/static/js/2.14f2d6b3.chunk.js.map",
+    "static/js/2.a84ce31f.chunk.js": "/yit-web/static/js/2.a84ce31f.chunk.js",
+    "static/js/2.a84ce31f.chunk.js.map": "/yit-web/static/js/2.a84ce31f.chunk.js.map",
     "index.html": "/yit-web/index.html",
-    "precache-manifest.5a3aa5cfd791eace886d26c8d57bb05a.js": "/yit-web/precache-manifest.5a3aa5cfd791eace886d26c8d57bb05a.js",
+    "precache-manifest.bcba92a20c1edc2f13fe9701a33184f1.js": "/yit-web/precache-manifest.bcba92a20c1edc2f13fe9701a33184f1.js",
     "service-worker.js": "/yit-web/service-worker.js",
-    "static/css/main.14f5ce3c.chunk.css.map": "/yit-web/static/css/main.14f5ce3c.chunk.css.map",
-    "static/js/2.14f2d6b3.chunk.js.LICENSE.txt": "/yit-web/static/js/2.14f2d6b3.chunk.js.LICENSE.txt",
+    "static/css/main.363147b0.chunk.css.map": "/yit-web/static/css/main.363147b0.chunk.css.map",
+    "static/js/2.a84ce31f.chunk.js.LICENSE.txt": "/yit-web/static/js/2.a84ce31f.chunk.js.LICENSE.txt",
     "static/media/App-development.png": "/yit-web/static/media/App-development.ccc27e88.png",
     "static/media/GetStarted.css": "/yit-web/static/media/GetStartedBackground.9b951f8d.jpg",
     "static/media/WhYs.jpg": "/yit-web/static/media/WhYs.96091437.jpg",
@@ -30,12 +30,14 @@
     "static/media/logoBlue.svg": "/yit-web/static/media/logoBlue.079a1b54.svg",
     "static/media/logoWhite.svg": "/yit-web/static/media/logoWhite.09241bf5.svg",
     "static/media/Home.css": "/yit-web/static/media/mainBackground.996ea8ec.jpg",
+    "static/media/manahel01.png": "/yit-web/static/media/manahel01.2fdb10bb.png",
+    "static/media/manahel02.png": "/yit-web/static/media/manahel02.575e29e7.png",
     "static/media/meeting.jpg": "/yit-web/static/media/meeting.cea65dee.jpg",
     "static/media/mimmar.png": "/yit-web/static/media/mimmar.8e3ea14f.png",
     "static/media/mokhtar.jpg": "/yit-web/static/media/mokhtar.e41f9b49.jpg",
     "static/media/mustapha.jpg": "/yit-web/static/media/mustapha.50c80576.jpg",
     "static/media/next.webp": "/yit-web/static/media/next.00c32d22.webp",
-    "static/media/oualid.jpg": "/yit-web/static/media/oualid.707d16e5.jpg",
+    "static/media/oualid.jpg": "/yit-web/static/media/oualid.71c65631.jpg",
     "static/media/oualidPorfolio.png": "/yit-web/static/media/oualidPorfolio.940ec925.png",
     "static/media/previous.webp": "/yit-web/static/media/previous.b6b7c355.webp",
     "static/media/scrollDown.gif": "/yit-web/static/media/scrollDown.d290a11f.gif",
@@ -46,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b269d569.js",
-    "static/js/2.14f2d6b3.chunk.js",
-    "static/css/main.14f5ce3c.chunk.css",
-    "static/js/main.690123ff.chunk.js"
+    "static/js/2.a84ce31f.chunk.js",
+    "static/css/main.363147b0.chunk.css",
+    "static/js/main.3daa362b.chunk.js"
   ]
 }
