@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yit-web/static/css/main.14641f3d.chunk.css",
-    "main.js": "/yit-web/static/js/main.87ed3b15.chunk.js",
-    "main.js.map": "/yit-web/static/js/main.87ed3b15.chunk.js.map",
+    "main.js": "/yit-web/static/js/main.180cfb92.chunk.js",
+    "main.js.map": "/yit-web/static/js/main.180cfb92.chunk.js.map",
     "runtime-main.js": "/yit-web/static/js/runtime-main.b269d569.js",
     "runtime-main.js.map": "/yit-web/static/js/runtime-main.b269d569.js.map",
     "static/js/2.1616d84e.chunk.js": "/yit-web/static/js/2.1616d84e.chunk.js",
     "static/js/2.1616d84e.chunk.js.map": "/yit-web/static/js/2.1616d84e.chunk.js.map",
     "index.html": "/yit-web/index.html",
-    "precache-manifest.93c53e466135ea665e2076fa1085e446.js": "/yit-web/precache-manifest.93c53e466135ea665e2076fa1085e446.js",
+    "precache-manifest.6c186627ba34d0f149ba9add3f41fcf9.js": "/yit-web/precache-manifest.6c186627ba34d0f149ba9add3f41fcf9.js",
     "service-worker.js": "/yit-web/service-worker.js",
     "static/css/main.14641f3d.chunk.css.map": "/yit-web/static/css/main.14641f3d.chunk.css.map",
     "static/js/2.1616d84e.chunk.js.LICENSE.txt": "/yit-web/static/js/2.1616d84e.chunk.js.LICENSE.txt",
@@ -50,6 +50,6 @@
     "static/js/runtime-main.b269d569.js",
     "static/js/2.1616d84e.chunk.js",
     "static/css/main.14641f3d.chunk.css",
-    "static/js/main.87ed3b15.chunk.js"
+    "static/js/main.180cfb92.chunk.js"
   ]
 }
