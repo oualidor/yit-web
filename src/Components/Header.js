@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import Logo from "./Logo";
 import $ from 'jquery';
 import PageTitle from "./PageTitle";
-import isMobile from "../CustomLibs/Functions";
+import {isMobile} from "../CustomLibs/Functions";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 function getSectionIndex(){

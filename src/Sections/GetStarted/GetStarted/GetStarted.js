@@ -7,6 +7,7 @@ import {render} from "react-dom";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import $ from "jquery";
 import TelegramIcon from '@material-ui/icons/Telegram';
+import {setDimenstions, setMobileDimensions} from "../../../CustomLibs/Functions";
 
 class GetStarted extends React.Component{
 
@@ -37,6 +38,22 @@ class GetStarted extends React.Component{
     }
 
     componentDidMount() {
+
+
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                setMobileDimensions();
+                $(window).resize(function(){
+                    setMobileDimensions();
+                });
+
+            }else {
+                setDimenstions();
+                $(window).resize(function(){
+                    setDimenstions();
+                });
+            }
+
 
 
     }

@@ -145,4 +145,8 @@ code {
   .toHide{
     display: none;
   }
+
+  .mobileHide{
+    display: none;
+  }
 }

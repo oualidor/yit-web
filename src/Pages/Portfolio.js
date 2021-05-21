@@ -10,15 +10,18 @@ import ecmorce1 from "../Imgs/Portfolio/ecomerce1.jpg"
 import ecmorce2 from "../Imgs/Portfolio/ecomerce2.jpg"
 import next from "../Imgs/next.webp"
 import pevious from "../Imgs/previous.webp"
+import manahel1 from "../Imgs/Portfolio/manahel01.png"
+import manahel2 from "../Imgs/Portfolio/manahel02.png"
+
 import MobileApp from "../Components/MobileApp";
 
-
+import {isMobile, setMobileDimensions, setDimenstions} from "../CustomLibs/Functions"
 import WebIcon from '@material-ui/icons/Web';
 import StayCurrentPortraitIcon from '@material-ui/icons/StayCurrentPortrait';
 import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
-import Logo from "../Components/Logo";
-import isMobile from "../CustomLibs/Functions";
+
+
 
 
 
@@ -28,6 +31,7 @@ let ids = [0, 1, 2]
 let prevId = 0;
 let nextID = 1;
 let currentID = 0;
+let type ="Web"
 function prevClick(e) {
     $("#next").attr("href", "#Project"+currentID);
     $("#aPrev").attr("href", "#Project"+prevId);
@@ -55,6 +59,24 @@ class Portfolio extends React.Component{
 
     }
     componentDidMount() {
+
+        $(document).ready(function(){
+
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                setMobileDimensions();
+                $(window).resize(function(){
+                    setMobileDimensions();
+                });
+
+            }else {
+                setDimenstions();
+                $(window).resize(function(){
+                    setDimenstions();
+                });
+            }
+
+        })
         if(isMobile){
             this.setState({iconsStyles : {
                     width: 90,
@@ -88,6 +110,7 @@ class Portfolio extends React.Component{
     }
 
     nextClick(e){
+        alert(e.target.href)
         $("#next").attr("href", "#Project"+nextID);
         $("#aPrev").attr("href", "#Project"+currentID);
         prevId = currentID;
@@ -107,45 +130,53 @@ class Portfolio extends React.Component{
                                 <a id={"aPrev"} href={"#Project"+prevId} onClick={prevClick}><img className={"nextImage"} src={pevious} alt=""/> </a>
                             </div>
                             <div className="ProductsContainer">
-                                <WebSite
-                                    id={"Project"+ids[0]}
-                                    image={mimmarImage}
-                                    name={"Mimmar Sinan"}
-                                    coders={"Your IT Department, the coding team"}
-                                    desingers={"As client requested, YIT, the design team"}
-                                    policy={"Team integration, life time support"}
-                                    technologies={technologies}
-                                    link={"https://www.mimarsin.com/"}/>
-                                <WebSite
-                                    id={"Project"+ids[1]}
-                                    image={arch}
-                                    name={"Archaeological Paths"}
-                                    coders={"Your IT Department, the coding team"}
-                                    desingers={"Third party partner"}
-                                    policy={"Development only"}
-                                    technologies={"Word press, wp travel engine, YIT-Booking"}
-                                    link={"https://archaeologicalpaths.com/"}/>
-                                <WebSite
-                                    id={"Project"+ids[2]}
-                                    image={chaab}
-                                    name={"News Bar for Jouranl El Chaab"}
-                                    coders={"YourIt frparment, the devlopment team"}
-                                    desingers={"As Client requested"}
-                                    policy={"Life time support"}
-                                    technologies={"HTML5, JQUERY, CSS"}
-                                    link={"http://www.ech-chaab.com/echaab/"}/>
-                                <WebSite
-                                    id={"Project"+ids[3]}
-                                    image={oualidPorfolioImage}
-                                    name={"Oualid KHIAL Porfolio"}
-                                    coders={"Oualid KHIAL"}
-                                    desingers={"Oualid KHIAL"}
-                                    policy={"Life time support"}
-                                    technologies={"HTML5, JQUERY, CSS"}
-                                    link={"https://archaeologicalpaths.com/"}/>
+                                <div className="productContainer">
+                                    <WebSite
+                                        id={"WebProject"+ids[0]}
+                                        image={mimmarImage}
+                                        name={"Mimmar Sinan"}
+                                        coders={"Your IT Department, the coding team"}
+                                        desingers={"As client requested, YIT, the design team"}
+                                        policy={"Team integration, life time support"}
+                                        technologies={technologies}
+                                        link={"https://www.mimarsin.com/"}/>
+                                </div>
+                                <div className="productContainer">
+                                    <WebSite
+                                        id={"WebProject"+ids[1]}
+                                        image={arch}
+                                        name={"Archaeological Paths"}
+                                        coders={"Your IT Department, the coding team"}
+                                        desingers={"Third party partner"}
+                                        policy={"Development only"}
+                                        technologies={"Word press, wp travel engine, YIT-Booking"}
+                                        link={"https://archaeologicalpaths.com/"}/>
+                                </div>
+                                <div className="productContainer">
+                                    <WebSite
+                                        id={"WebProject"+ids[2]}
+                                        image={chaab}
+                                        name={"News Bar for Jouranl El Chaab"}
+                                        coders={"YourIt frparment, the devlopment team"}
+                                        desingers={"As Client requested"}
+                                        policy={"Life time support"}
+                                        technologies={"HTML5, JQUERY, CSS"}
+                                        link={"http://www.ech-chaab.com/echaab/"}/>
+                                </div>
+                                <div className="productContainer">
+                                    <WebSite
+                                        id={"WebProject"+ids[3]}
+                                        image={oualidPorfolioImage}
+                                        name={"Oualid KHIAL Porfolio"}
+                                        coders={"Oualid KHIAL"}
+                                        desingers={"Oualid KHIAL"}
+                                        policy={"Life time support"}
+                                        technologies={"HTML5, JQUERY, CSS"}
+                                        link={"https://archaeologicalpaths.com/"}/>
+                                </div>
                             </div>
                             <div className="moveRight">
-                                <a id={"next"} href={"#Project"+nextID} onClick={this.nextClick}><img className={"nextImage"} src={next} alt="Next"/></a>
+                                <a name={"Hello"} id={"next"} href={"#Project"+nextID} onClick={this.nextClick}><img className={"nextImage"} src={next} alt="Next"/></a>
                             </div>
                         </div>
                         <div className="categoryHolder" id={"mobile"}>
@@ -160,7 +191,27 @@ class Portfolio extends React.Component{
                                 technologies={"Android, NodeJS Express, PostGreSQL "}
                             />
                         </div>
-
+                        <div className="categoryHolder" id={"desktop"}>
+                            <div className="moveLeft">
+                                <a id={"Web"} href={"#Project"+prevId} onClick={prevClick}><img className={"nextImage"} src={pevious} alt=""/> </a>
+                            </div>
+                            <div className="ProductsContainer">
+                                <div className="productContainer">
+                                    <WebSite
+                                        id={"Project"+ids[1]}
+                                        image={manahel1}
+                                        name={"School managment"}
+                                        coders={"Your IT Department, the coding team"}
+                                        desingers={"Third party partner"}
+                                        policy={"Development only"}
+                                        technologies={"Word press, wp travel engine, YIT-Booking"}
+                                        link={"https://archaeologicalpaths.com/"}/>
+                                </div>
+                            </div>
+                            <div className="moveRight">
+                                <a id={"next"} href={"#Project"+nextID} onClick={this.nextClick}><img className={"nextImage"} src={next} alt="Next"/></a>
+                            </div>
+                        </div>
                     </div>
                     <div className="tabsMenu">
                         <div className="tab">
@@ -181,7 +232,7 @@ class Portfolio extends React.Component{
                             </a>
                         </div>
                         <div className="tab">
-                            <a className={"tabEntry"} href="#mobile">
+                            <a className={"tabEntry"} href="#desktop">
                                 <DesktopWindowsIcon
                                     className={"portfolioNavIcon"}
                                     style={this.state.iconsStyles}/>

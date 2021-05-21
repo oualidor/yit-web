@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
-import ContactUs from "./Components/ContactUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 /*  "homepage": "file:///mnt/Bibliotheque/Programing/Projects/React/yit-web/build/",*/
 function Landing() {

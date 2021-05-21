@@ -3,7 +3,7 @@ import "./WhyUs.css"
 import $ from 'jquery';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import TelegramIcon from "@material-ui/icons/Telegram";
-
+import {setMobileDimensions, setDimenstions} from "../../../CustomLibs/Functions"
 
 
 class WhyUs extends React.Component{
@@ -12,7 +12,20 @@ class WhyUs extends React.Component{
     }
     componentDidMount() {
         $(document).ready(function(){
-            test();
+
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                setMobileDimensions();
+                $(window).resize(function(){
+                    setMobileDimensions();
+                });
+
+            }else {
+                setDimenstions();
+                $(window).resize(function(){
+                    setDimenstions();
+                });
+            }
 
         })
     }

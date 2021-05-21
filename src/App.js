@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
-import ContactUs from "./Components/ContactUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 import WhyUs from "./Sections/WhyUs/WhyUs/WhyUs";
 import Contracts from "./Pages/Contracts";
 import OurTeam from "./Sections/WhyUs/OurTeam/OurTeam";
@@ -17,6 +17,7 @@ import whyUsImage from  "./Imgs/WhYs.jpg"
 import ReasonsWhy from "./Sections/WhyUs/ReasonsWhy/ReasonsWhy";
 import $ from "jquery";
 import MobileNavigation from "./Components/mobileNavigation/mobileNavigation";
+import { Router,  Link, browserHistory, IndexRoute } from 'react-router'
 
 /*  "homepage": "file:///mnt/Bibliotheque/Programing/Projects/React/yit-web/build/",*/
 class App extends React.Component{
@@ -31,7 +32,7 @@ class App extends React.Component{
 
     componentDidMount() {
         $(document).ready(function(){
-            test();
+
 
         })
     }
@@ -39,8 +40,8 @@ class App extends React.Component{
         return (
             <React.Fragment>
                 <BrowserRouter>
-                    <Switch>
-                        <Route exact path={"/yit-web"}>
+
+                        <Route exact path={"/yit-web/"}>
                             <Header
                                 page={"home"}
                                 backgroundColor={"none"}
@@ -51,7 +52,7 @@ class App extends React.Component{
                             <ContactUs></ContactUs>
 
                         </Route>
-                        <Route exact path={"/WhyUs"}>
+                        <Route exact path={"/yit-web/WhyUs"}>
                             <Header
                                 page={"whyUs"}
                                 backgroundColor={"none"}
@@ -61,7 +62,7 @@ class App extends React.Component{
                             <OurTeam></OurTeam>
                             <ReasonsWhy></ReasonsWhy>
                         </Route>
-                        <Route exact path={"/GetStarted"}>
+                        <Route exact path={"/yit-web/GetStarted"}>
                             <Header
                                 page={"GetStarted"}
                                 backgroundColor={"none"}
@@ -72,17 +73,17 @@ class App extends React.Component{
 
 
                         </Route>
-                        <Route exact path={"/Portfolio"}>
+                        <Route exact path={"/yit-web/Portfolio"}>
                             <Header
                                 backgroundColor={"white"}/>
                             <Portfolio></Portfolio>
                         </Route>
-                        <Route exact path={"/Services"}>
+                        <Route exact path={"/yit-web/Services"}>
                             <Header
                                 backgroundColor={"white"}/>
                             <Portfolio></Portfolio>
                         </Route>
-                    </Switch>
+
                     <MobileNavigation></MobileNavigation>
                 </BrowserRouter>
             </React.Fragment>

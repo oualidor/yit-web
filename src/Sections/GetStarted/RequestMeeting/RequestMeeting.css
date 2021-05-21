@@ -41,13 +41,14 @@
 @media (pointer:none), (pointer:coarse) {
     .OnlineMeetingContainer{
         float: left;
-        height: 100%;
+        height: auto;
         width: 100%;
     }
     .OnlineMeetingContainer .title{
         float: left;
         width: 100%;
         margin-bottom: 20px;
+
     }
     .RequestMeetingFormContainer{
         float: left;

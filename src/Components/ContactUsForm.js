@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import isMobile from "../CustomLibs/Functions";
+import {isMobile} from "../CustomLibs/Functions";
 import "../Style/Components/ContactUsForm.css"
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
@@ -77,11 +77,9 @@ class ContactUsForm extends React.Component{
                                 <Grid item xs={12}>
                                     <b>Personal Information</b>
                                 </Grid>
-                                <Grid item xs={8}>
+                                <Grid item xs>
                                     <TextField
                                         height="100%"
-                                        size={"big"}
-                                        style={{height: 50}}
                                         name={"name"}
                                         label="Full Name"
                                         defaultValue=""

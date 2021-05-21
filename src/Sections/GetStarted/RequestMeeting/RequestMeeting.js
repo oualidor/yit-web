@@ -2,7 +2,7 @@ import React from "react";
 import "./RequestMeeting.css"
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import {Link} from "react-router-dom";
-import isMobile from "../../../CustomLibs/Functions";
+import {isMobile} from "../../../CustomLibs/Functions";
 import ContactUsForm from "../../../Components/ContactUsForm";
 import meetingImage from "./Imgs/meeting.jpg"
 import $ from "jquery";
@@ -75,7 +75,6 @@ class RequestMeeting extends React.Component{
                     <div className="RequestMeetingFormContainer">
                         <ContactUsForm></ContactUsForm>
                     </div>
-
                 </div>
                 <div  className="positionChooser">
                     <div className="visitTitle">

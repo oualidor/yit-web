@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 function detectMobile(){
     var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -12,6 +14,24 @@ function detectMobile(){
 }
 
 const isMobile = detectMobile();
+function setDimenstions(){
+
+    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
 
-export default isMobile
+    $('body').css("height", h+"px");
+    $('body').css("width", w+"px");
+}
+
+function setMobileDimensions(){
+
+    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    $('body').css("height", h+"px");
+    $('body').css("width", w+"px");
+
+}
+
+export {isMobile, setDimenstions, setMobileDimensions}

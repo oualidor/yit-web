@@ -2,7 +2,7 @@ import React from "react";
 import "../Style/Components/NavBar.css"
 import burgerMenuIconBlue from "../Imgs/burgerMenuBlue.png"
 import $ from 'jquery';
-import isMobile from "../CustomLibs/Functions"
+import {isMobile} from "../CustomLibs/Functions"
 import { Link } from "react-router-dom";
 
 function homeAdds(page){
@@ -65,21 +65,21 @@ class NavBar extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <img className="BurgerMenu" src={burgerMenuIconBlue}/>
+
                 <ul className="NavBar">
                     <li className="navLi" id="navHome">
-                        <a className={"navA"} href="/">YourIT DEPARTMENT</a>
+                        <a className={"navA"} href="/yit-web/">YourIT DEPARTMENT</a>
                         {homeAdds(this.props.page)}
                     </li>
                     <li className="navLi" id="navServices">
-                        <Link className={"navA"} to={"/WhyUs"}>WHY US</Link>
+                        <Link className={"navA"} to={"/yit-web/WhyUs"}>WHY US</Link>
                         {whyUsAdds(this.props.page)}
                     </li>
                     <li className="navLi" id="navPortfolio">
-                        <Link className={"navA"} to={"/Portfolio"}>PORTFOLIO</Link>
+                        <Link className={"navA"} to={"/yit-web/Portfolio"}>PORTFOLIO</Link>
                     </li>
                     <li className="navLi" id="navApply">
-                        <Link className={"navA navApplyText"}  id={""} to="/GetStarted">Get Started</Link>
+                        <Link className={"navA navApplyText"}  id={""} to="/yit-web/GetStarted">Get Started</Link>
                     </li>
                 </ul>
             </React.Fragment>

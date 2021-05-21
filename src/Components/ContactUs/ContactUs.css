@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--pagesBackgroundColor);
+    padding: 5%;
 }
 
     .footerContent{
@@ -15,6 +16,7 @@
     }
 
     .contactFormContainer{
+        border-radius: 20px;
         display: block;
         float: right;
         width: 40%;
@@ -22,7 +24,7 @@
         background-color: white;
         border-radius: 5vh;
         padding: 2%;
-        margin-left: 5%;
+
         box-shadow: 5px 5px 5px 5px #888888;
     }
 
@@ -42,12 +44,17 @@
 
     }
         .mail, .phone, .whatsUp, .faceBook{
+
             display: flex;
             align-items: center;
             align-content: center;
             width: 30%;
             height: 25%;
             font-size: 2.5vh;
+        }
+        .contactUsIcon{
+            fontSize: 20vw;
+            color: green;
         }
 
     .contactUsMapsContainer{
@@ -101,46 +108,52 @@
 
 @media (pointer:none), (pointer:coarse), (max-width: 700px)  {
     .ContactUS{
+
+    }
+
+    .contactUsImage{
         display: none;
     }
     .footerContent{
         display: block;
     }
-    .contactFormContainer{
-        float: right;
-        width: 90%;
-        height: 95%;
-        background-color: transparent;
-        border-radius: 50px;
-        padding: 2%;
-        margin-right: 5%;
-        box-shadow: none;
-    }
+
 
     .contactInfoContainer{
-        display: none;
         float: right;
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
         border-top-right-radius: 50px;
-        padding: 20px;
-        background-color: white;
+        padding: 5%;
         margin-right: 0%;
         font-family: 'Acme', sans-serif;
+        overflow: scroll;
     }
     .mail, .phone, .whatsUp, .faceBook{
+        margin-right: 5%;
+        border-radius: 30px;
         display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
         align-items: center;
         align-content: center;
         width: 100%;
-        height: 25%;
-        font-size: 2vh;
+        height: 100%;
+        font-size: 5vh;
+        background-color: white;
+    }
 
+    .contactUsIcon{
+        font-size: 5vh;
     }
 
     .contactUsMapsContainer{
         display: none;
-
         float: left;
         width: 50%;
         height: 80%;
@@ -155,37 +168,9 @@
         align-items: center;
         justify-content: space-between;
     }
-    .mapTab{
-        border-top-right-radius: 30px;
-        background-color: var(--primary);
-        height: 100%;
-        width: 30%;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-    }
 
     .mapContainer{
         height: 100%;
         width: 100%;
-    }
-
-
-
-    .footerBottomBar{
-        background-color: black;
-        color: white;
-        height: 5%;
-        width: 100%;
-        font-weight: bold;
-        font-size: 1vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
