@@ -89,13 +89,13 @@ class GetStarted extends React.Component{
                             <span className={"toHide"}>&nbsp;&nbsp;&nbsp;</span>Lets see what fits you most
                         </div>
                         <div className="GetStartedOptions">
-                            <a href={"#RequestMeeting"}  onClick={() => this.changePage("RequestMeeting")}>
+                            <a href={"#RequestMeeting"} >
                                 <div className="GetStartedOption" id={"startWithMeeting"}>
                                     Start With Meeting
                                 </div>
                             </a>
 
-                            <a href={"#Home"} onClick={() => this.changePage("Home")}>
+                            <a href={"/yit-web/#Services"}>
                             <div className="GetStartedOption" id={"startWithPaper"}>
                                <TelegramIcon style={{marginRight: "10px"}}/> Ready to GO
                             </div>

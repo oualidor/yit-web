@@ -59,7 +59,7 @@
 
 @media (pointer:none), (pointer:coarse), (max-width: 600px){
     .Home{
-        display: none;
+
         flex-direction: column;
         justify-content: space-evenly;
         background-color: rgba(0, 0, 0, 0.4);

@@ -58,9 +58,11 @@ class ContactUs extends React.Component{
                             </div>
                         </div>
                         <div className="whatsUp">
-                            <div className="iconContainer"> <WhatsAppIcon style={{height: '100%', width: "100%"}} style={{ color: green[500] }}/></div>
-                            <div className="valueContainer"> (213) 550 75 05 76 <br/>
-                                (213) 696 82 51 94</div>
+                            <div className="iconContainer"> <WhatsAppIcon style={{height: '100%', width: "100%", color: green[500]}}/></div>
+                            <div className="valueContainer">
+                                (213) 550 75 05 76 <br/>
+                                (213) 696 82 51 94
+                            </div>
                         </div>
                         <div className="faceBook" >
                             <div className="iconContainer"> <FacebookIcon style={{height: '100%', width: "100%"}} color={"primary"}/></div>
@@ -68,8 +70,10 @@ class ContactUs extends React.Component{
                         </div>
                         <div className="faceBook" >
                             <div className="iconContainer"> <RoomIcon  style={{height: '100%', width: "100%", color: red[500]}} /></div>
-                            Algeria, El Bayadh<br/>
-                            Algeria, Saida<br/>
+                            <div className="valueContainer">
+                                Algeria, El Bayadh<br/>
+                                Algeria, Saida<br/>
+                            </div>
                         </div>
                         <div className="mobileHide faceBook">
                             <div className="iconContainer"><MapIcon  style={{height: '100%', width: "100%", color: red[500]}}/></div>

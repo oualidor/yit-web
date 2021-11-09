@@ -24,7 +24,9 @@ const WebSite = ({id, image, name, coders, desingers, policy, technologies, link
                             <div className="webSiteOpenBTN">
                                 <a
                                     className={"webSiteOpenBtnA"}
-                                    href={link}>Open Site
+                                    href={link}
+                                    target={"_blank"}
+                                >Open Site
                                 </a>
                                 <OpenInNewIcon/>
                             </div>

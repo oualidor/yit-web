@@ -20,31 +20,7 @@ import WebIcon from '@material-ui/icons/Web';
 import StayCurrentPortraitIcon from '@material-ui/icons/StayCurrentPortrait';
 import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 import DevicesOtherIcon from '@material-ui/icons/DevicesOther';
-
-
-
-
-
-
-let ids = [0, 1, 2]
-
-let prevId = 0;
-let nextID = 1;
-let currentID = 0;
-let type ="Web"
-function prevClick(e) {
-    $("#next").attr("href", "#Project"+currentID);
-    $("#aPrev").attr("href", "#Project"+prevId);
-    if (prevId === 0){
-        nextID = currentID -1
-        currentID = currentID - 1;
-    }else{
-        prevId = prevId - 1;
-        nextID = currentID -1
-        currentID = currentID - 1;
-    }
-}
-
+import Slider from "../Components/Slider/Slider";
 
 
 let technologies = "HTML, CSS, JavaScript, WordPress, PostGreSQL"
@@ -109,15 +85,7 @@ class Portfolio extends React.Component{
         $( ".navApplyText" ).css("color", "white")
     }
 
-    nextClick(e){
-        alert(e.target.href)
-        $("#next").attr("href", "#Project"+nextID);
-        $("#aPrev").attr("href", "#Project"+currentID);
-        prevId = currentID;
-        nextID = nextID + 1
-        currentID = currentID + 1;
 
-    }
     render(){
         return(
             <React.Fragment>
@@ -126,92 +94,82 @@ class Portfolio extends React.Component{
                     <div className="pageTitleMargine"></div>
                     <div className="categoriesHolder">
                         <div className="categoryHolder" id={"web"}>
-                            <div className="moveLeft">
-                                <a id={"aPrev"} href={"#Project"+prevId} onClick={prevClick}><img className={"nextImage"} src={pevious} alt=""/> </a>
-                            </div>
-                            <div className="ProductsContainer">
-                                <div className="productContainer">
-                                    <WebSite
-                                        id={"WebProject"+ids[0]}
-                                        image={mimmarImage}
-                                        name={"Mimmar Sinan"}
-                                        coders={"Your IT Department, the coding team"}
-                                        desingers={"As client requested, YIT, the design team"}
-                                        policy={"Team integration, life time support"}
-                                        technologies={technologies}
-                                        link={"https://www.mimarsin.com/"}/>
-                                </div>
-                                <div className="productContainer">
-                                    <WebSite
-                                        id={"WebProject"+ids[1]}
-                                        image={arch}
-                                        name={"Archaeological Paths"}
-                                        coders={"Your IT Department, the coding team"}
-                                        desingers={"Third party partner"}
-                                        policy={"Development only"}
-                                        technologies={"Word press, wp travel engine, YIT-Booking"}
-                                        link={"https://archaeologicalpaths.com/"}/>
-                                </div>
-                                <div className="productContainer">
-                                    <WebSite
-                                        id={"WebProject"+ids[2]}
-                                        image={chaab}
-                                        name={"News Bar for Jouranl El Chaab"}
-                                        coders={"YourIt frparment, the devlopment team"}
-                                        desingers={"As Client requested"}
-                                        policy={"Life time support"}
-                                        technologies={"HTML5, JQUERY, CSS"}
-                                        link={"http://www.ech-chaab.com/echaab/"}/>
-                                </div>
-                                <div className="productContainer">
-                                    <WebSite
-                                        id={"WebProject"+ids[3]}
-                                        image={oualidPorfolioImage}
-                                        name={"Oualid KHIAL Porfolio"}
-                                        coders={"Oualid KHIAL"}
-                                        desingers={"Oualid KHIAL"}
-                                        policy={"Life time support"}
-                                        technologies={"HTML5, JQUERY, CSS"}
-                                        link={"https://archaeologicalpaths.com/"}/>
-                                </div>
-                            </div>
-                            <div className="moveRight">
-                                <a name={"Hello"} id={"next"} href={"#Project"+nextID} onClick={this.nextClick}><img className={"nextImage"} src={next} alt="Next"/></a>
-                            </div>
+                            <Slider content={"web"}>
+                                <WebSite
+
+                                    image={mimmarImage}
+                                    name={"Mimmar Sinan"}
+                                    coders={"Your IT Department, the coding team"}
+                                    desingers={"As client requested, YIT, the design team"}
+                                    policy={"Team integration, life time support"}
+                                    technologies={technologies}
+                                    link={"https://www.mimarsin.com/"}/>
+                                <WebSite
+
+                                    image={arch}
+                                    name={"Archaeological Paths"}
+                                    coders={"Your IT Department, the coding team"}
+                                    desingers={"Third party partner"}
+                                    policy={"Development only"}
+                                    technologies={"Word press, wp travel engine, YIT-Booking"}
+                                    link={"https://archaeologicalpaths.com/"}/>
+                                <WebSite
+
+                                    image={oualidPorfolioImage}
+                                    name={"Oualid KHIAL Porfolio"}
+                                    coders={"Oualid KHIAL"}
+                                    desingers={"Oualid KHIAL"}
+                                    policy={"Life time support"}
+                                    technologies={"HTML5, JQUERY, CSS"}
+                                    link={"https://archaeologicalpaths.com/"}/>
+                            </Slider>
                         </div>
                         <div className="categoryHolder" id={"mobile"}>
-                            <MobileApp
-                                id={"id"}
-                                name={"E-Comerce"}
-                                image1={ecmorce1}
-                                image2={ecmorce2}
-                                coders={"YITDepartment, the coding team"}
-                                desingers={"Third party partners, Shortcuts team" }
-                                policy={"Life time support"}
-                                technologies={"Android, NodeJS Express, PostGreSQL "}
-                            />
+                            <Slider content={"mobile"}>
+                                <MobileApp
+
+                                    name={"E-Comerce"}
+                                    image1={ecmorce1}
+                                    image2={ecmorce2}
+                                    coders={"YITDepartment, the coding team"}
+                                    desingers={"Third party partners, Shortcuts team" }
+                                    policy={"Life time support"}
+                                    technologies={"Android, NodeJS Express, PostGreSQL "}
+                                />
+                                <MobileApp
+                                    id={"id"}
+                                    name={"E-Comerce"}
+                                    image1={ecmorce1}
+                                    image2={ecmorce2}
+                                    coders={"YITDepartment, the coding team"}
+                                    desingers={"Third party partners, Shortcuts team" }
+                                    policy={"Life time support"}
+                                    technologies={"Android, NodeJS Express, PostGreSQL "}
+                                />
+                            </Slider>
                         </div>
                         <div className="categoryHolder" id={"desktop"}>
-                            <div className="moveLeft">
-                                <a id={"Web"} href={"#Project"+prevId} onClick={prevClick}><img className={"nextImage"} src={pevious} alt=""/> </a>
-                            </div>
-                            <div className="ProductsContainer">
-                                <div className="productContainer">
-                                    <WebSite
-                                        id={"Project"+ids[1]}
-                                        image={manahel1}
-                                        name={"School managment"}
-                                        coders={"Your IT Department, the coding team"}
-                                        desingers={"Third party partner"}
-                                        policy={"Development only"}
-                                        technologies={"Word press, wp travel engine, YIT-Booking"}
-                                        link={"https://archaeologicalpaths.com/"}/>
-                                </div>
-                            </div>
-                            <div className="moveRight">
-                                <a id={"next"} href={"#Project"+nextID} onClick={this.nextClick}><img className={"nextImage"} src={next} alt="Next"/></a>
-                            </div>
-                        </div>
+                          <Slider content="desktop">
+                              <WebSite
+
+                                  image={manahel1}
+                                  name={"School managment"}
+                                  coders={"Your IT Department, the coding team"}
+                                  desingers={"Third party partner"}
+                                  policy={"Development only"}
+                                  technologies={"Word press, wp travel engine, YIT-Booking"}
+                                  link={"https://archaeologicalpaths.com/"}/>
+                              <WebSite
+
+                                  image={manahel1}
+                                  name={"School managment"}
+                                  coders={"Your IT Department, the coding team"}
+                                  desingers={"Third party partner"}
+                                  policy={"Development only"}
+                                  technologies={"Word press, wp travel engine, YIT-Booking"}
+                                  link={"https://archaeologicalpaths.com/"}/>
+                          </Slider>
+                    </div>
                     </div>
                     <div className="tabsMenu">
                         <div className="tab">

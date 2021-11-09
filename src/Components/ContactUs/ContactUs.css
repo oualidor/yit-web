@@ -28,7 +28,6 @@
         box-shadow: 5px 5px 5px 5px #888888;
     }
 
-
     .contactInfoContainer{
         display: flex;
         float: right;
@@ -44,7 +43,6 @@
 
     }
         .mail, .phone, .whatsUp, .faceBook{
-
             display: flex;
             align-items: center;
             align-content: center;
@@ -56,6 +54,11 @@
             fontSize: 20vw;
             color: green;
         }
+
+    .contactInfoContainer .iconContainer{
+        height: 50%;
+        width: 50%;
+    }
 
     .contactUsMapsContainer{
         float: left;
@@ -148,6 +151,9 @@
         background-color: white;
     }
 
+    .contactInfoContainer .iconContainer{
+
+    }
     .contactUsIcon{
         font-size: 5vh;
     }
