@@ -9,7 +9,7 @@ function draw(props){
             <div className={"BenefitCard"}>
                 <img className="icon" src={props.image}></img>
                 .<br/>.<br/>.<br/>.<br/>
-                <img className="yesIcon" src={yes}/>
+                <img className="yesIcon" src={yes} alt={""}/>
                 <div className="title">{props.title}</div>
                 <div className="text">
                     {props.text}

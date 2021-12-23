@@ -8,12 +8,10 @@
     padding-left: 5%;
 
 }
-
-
     .OnlineMeetingContainer{
         float: left;
         height: 80%;
-        width: 45%;
+        width: 100%;
     }
     .OnlineMeetingContainer .title{
         float: left;

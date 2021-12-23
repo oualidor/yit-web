@@ -40,7 +40,8 @@ class Header extends React.Component{
         super(props);
         this.state = {
             "pageTitle" : "",
-            "backgroundColor": this.props.backgroundColor
+            "backgroundColor": this.props.backgroundColor,
+            "stat": 0
         }
     }
 
@@ -48,9 +49,9 @@ class Header extends React.Component{
         if($(window).scrollTop() > sectionHeight -500) {
             //Header
             $( ".Header" ).css("background", "-webkit-linear-gradient(white, white)")
+            $( ".Header" ).css("box-shadow", "1px 1px 10px 1px lightgray")
             $( ".Header" ).css("top", "0%")
             $( ".navA" ).css("color", "#0ba4d4")
-
             $( ".menuIcon" ).css("color", "#0ba4d4")
 
             //Logo
@@ -71,6 +72,7 @@ class Header extends React.Component{
 
             //Header
             $( ".Header" ).css("background-color", "")
+            $( ".Header" ).css("box-shadow", "")
             $( ".Header" ).css("top", "2%")
             $( ".Header" ).css("height", "9%")
 

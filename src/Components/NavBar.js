@@ -68,7 +68,7 @@ class NavBar extends React.Component{
 
                 <ul className="NavBar">
                     <li className="navLi" id="navHome">
-                        <a className={"navA"} href="/yit-web/">YourIT DEPARTMENT</a>
+                        <a className={"navA"} href="/yit-web/">HOME</a>
                         {homeAdds(this.props.page)}
                     </li>
                     <li className="navLi" id="navServices">
@@ -77,6 +77,9 @@ class NavBar extends React.Component{
                     </li>
                     <li className="navLi" id="navPortfolio">
                         <Link className={"navA"} to={"/yit-web/Portfolio"}>PORTFOLIO</Link>
+                    </li>
+                    <li className="navLi" id="navProducts">
+                        <Link className={"navA"} to={"/yit-web/Portfolio"}>PRODUCTS</Link>
                     </li>
                     <li className="navLi" id="navApply">
                         <Link className={"navA navApplyText"}  id={""} to="/yit-web/GetStarted">Get Started</Link>

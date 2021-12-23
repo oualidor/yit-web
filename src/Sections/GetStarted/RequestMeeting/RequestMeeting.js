@@ -3,7 +3,7 @@ import "./RequestMeeting.css"
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import {Link} from "react-router-dom";
 import {isMobile} from "../../../CustomLibs/Functions";
-import ContactUsForm from "../../../Components/ContactUsForm";
+import ContactUsForm from "../../../Components/ContactUsForm/ContactUsForm";
 import meetingImage from "./Imgs/meeting.jpg"
 import $ from "jquery";
 import GoogleMap from "../../../Components/GoogleMap";
@@ -12,6 +12,7 @@ import TextField from "@material-ui/core/TextField";
 import {render} from "react-dom";
 import Select from "@material-ui/core/Select";
 import App from "../../../App";
+import YitForm from "../../../Components/YitForm/YitForm";
 
 function changeMap(center){
     render(
@@ -51,6 +52,7 @@ class RequestMeeting extends React.Component{
 
             },
             center : {lat: 34.8370849, lng: 0.1563617}}
+        this.formRef = React.createRef()
     }
 
     wilayaChangeHolder = (event) => {
@@ -66,9 +68,16 @@ class RequestMeeting extends React.Component{
 
         }
     }
+    handleSubmit(){
+        alert("hi")
+    }
     render() {
         return (
             <div className={"RequestMeeting"} id={"RequestMeeting"}>
+                <YitForm
+                    ref={this.formRef}
+                    handleSubmit={this.handleSubmit.bind(this)}
+                >
                 <div className="topMenuSpacer"></div>
                 <div className="OnlineMeetingContainer">
                     <span className={"title"} style={{fontSize: "4vh"}}><b>Schedule an online meeting</b></span><br/>
@@ -76,40 +85,7 @@ class RequestMeeting extends React.Component{
                         <ContactUsForm></ContactUsForm>
                     </div>
                 </div>
-                <div  className="positionChooser">
-                    <div className="visitTitle">
-                        <Grid container spacing={2} className={"SettingGrid"}>
-                            <Grid item xs={8}>
-                                <b>Or pay us a visit</b>
-                            </Grid>
-                            <Grid item xs={4}>
-                                <Select
-                                    name={"name"}
-                                    label="Wilaya"
-                                    select
-                                    defaultValue=""
-                                    fullWidth
-                                    helperText=""
-                                    variant="outlined"
-                                    required
-                                    onChange={this.wilayaChangeHolder}>
-                                    {
-                                        localPositions.map((option) => (
-                                        <option key={option.value} value={option.value}>
-                                            {option.label}
-                                        </option>
-                                        ))
-                                    }
-                                </Select>
-                            </Grid>
-                            <Grid item xs={12}></Grid>
-                        </Grid>
-                    </div>
-                    <div className="mapHolder" id={"mapHolder"}>
-                        <GoogleMap center={{lat: 34.8370849, lng: 0.1563617}} zoom={15}/>
-                    </div>
-                </div>
-
+                </YitForm>
             </div>
         );
     }

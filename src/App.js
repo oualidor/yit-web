@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from "./Components/Header";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
@@ -18,6 +18,7 @@ import ReasonsWhy from "./Sections/WhyUs/ReasonsWhy/ReasonsWhy";
 import $ from "jquery";
 import MobileNavigation from "./Components/mobileNavigation/mobileNavigation";
 import { Router,  Link, browserHistory, IndexRoute } from 'react-router'
+import YitUnderConstruction from "./Components/UnderConstruction/YitUnderConstruction";
 
 /*  "homepage": "file:///mnt/Bibliotheque/Programing/Projects/React/yit-web/build/",*/
 class App extends React.Component{
@@ -39,18 +40,18 @@ class App extends React.Component{
     render() {
         return (
             <React.Fragment>
+
                 <BrowserRouter>
 
                         <Route exact path={"/yit-web/"}>
                             <Header
                                 page={"home"}
                                 backgroundColor={"none"}
-                            titles={["", "Who We Are", "What We DO", "Contact Information"]}/>
+                                titles={["", "Who We Are", "What We DO", "Contact Information"]}/>
                             <Home></Home>
                             <AboutUs></AboutUs>
                             <Services></Services>
                             <ContactUs></ContactUs>
-
                         </Route>
                         <Route exact path={"/yit-web/WhyUs"}>
                             <Header
@@ -70,8 +71,6 @@ class App extends React.Component{
 
                                     <GetStarted></GetStarted>
                                     <RequestMeeting></RequestMeeting>
-
-
                         </Route>
                         <Route exact path={"/yit-web/Portfolio"}>
                             <Header
@@ -83,7 +82,6 @@ class App extends React.Component{
                                 backgroundColor={"white"}/>
                             <Portfolio></Portfolio>
                         </Route>
-
                     <MobileNavigation></MobileNavigation>
                 </BrowserRouter>
             </React.Fragment>

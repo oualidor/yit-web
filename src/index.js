@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import YitUnderConstruction from "./Components/UnderConstruction/YitUnderConstruction";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <YitUnderConstruction></YitUnderConstruction>
     </React.StrictMode>,
     document.getElementById('root')
 );

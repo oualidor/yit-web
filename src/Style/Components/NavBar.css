@@ -48,10 +48,8 @@
     .navA{
         color: white;
         text-decoration: none;
-        font-size: 1.2vw;
-        font-family: 'Acme', sans-serif;
-        font-family: 'Vollkorn', serif;
-        font-family: 'Oswald', sans-serif;
+        font-size: 1.1vw;
+        font-family: 'Popins', sans-serif;
         margin-right: 2%;
         font-weight: bold;
     }

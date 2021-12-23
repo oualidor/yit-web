@@ -1,12 +1,20 @@
 .contactUsForm{
     height: 100%;
     width: 100%;
+    padding: 4%;
 
 }
+
+.topText{
+    font-family: 'Electrolize';
+    font-size: 2.5vw
+}
+
 .contactUsFormFname{
     width: 48%;
     float: left;
 }
+
 .contactUsFormLname{
     float: right;
     width: 48%;
@@ -44,7 +52,6 @@
     background-color: #0ba4d422;
 }
 
-
 .contactUsFormTextArea{
     resize: none;
     width: 100%;
@@ -60,7 +67,18 @@
 
 
 
-@media (pointer:none), (pointer:coarse), (max-width: 700px) {
+@media (pointer:none), (pointer:coarse), (max-width: 900px) {
+
+    .contactUsForm{
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+        overflow: auto;
+    }
+    .topText{
+        font-size: 6vw
+    }
+
     .contactUsFormFname, .contactUsFormLname, .contactUsFormEmail{
         width: 100%;
         border: 0px;
